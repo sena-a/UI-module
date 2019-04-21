@@ -7,69 +7,108 @@
     <link href="scss/style.scss" rel="stylesheet" />
   </head>
   <body>
-    <!-- card vertical ver -->
-    <div class="card vertical">
-      <img class="card__img" src="./images/sample.jpg" alt="카드 이미지" />
-      <div class="card__info">
-        <p class="card__label">Card Label</p>
-        <p class="card__title">Card Title</p>
-        <div class="card__cost">
-          <span class="card__cost--hilight">Hilight</span>
-          <span class="card__cost--cross">Cross Out</span>
-        </div>
-      </div>
-      <!-- 카드 하단 영역 -->
-      <div class="card__review">
-        <!-- 카드 하단 별점 처리 UI -->
-        <div class="card__stars" data-value="3">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <!-- 카드 하단 텍스트 영역 -->
-        <p class="card__comment">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-
-    <!-- card horizontal ver -->
-    <div class="card horizontal">
-      <div class="card__img-cover">
+    <section class="card-vertical-ui">
+      <!-- card vertical ver -->
+      <div class="card vertical">
         <img class="card__img" src="./images/sample.jpg" alt="카드 이미지" />
-      </div>
-      <div class="card__info">
-        <p class="card__title">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p class="card__content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <!-- 카드 하단 별점 처리 UI -->
-        <div class="card__stars" data-value="3">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <p class="card__auth">John Doe</p>
+        <div class="card__info">
+          <p class="card__label">Card Label</p>
+          <p class="card__title">Card Title</p>
+          <div class="card__cost">
+            <span class="card__cost--hilight">Hilight</span>
+            <span class="card__cost--cross">Cross Out</span>
+          </div>
+        </div>
+        <!-- 카드 하단 영역 -->
+        <div class="card__review">
+          <!-- 카드 하단 별점 처리 UI -->
+          <div class="card__stars" data-value="3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- 카드 하단 텍스트 영역 -->
+          <p class="card__comment">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </div>
-    </div>
+      <!-- card vertical-하단 텍스트 없음 ver -->
+      <div class="card vertical">
+        <img class="card__img" src="./images/sample.jpg" alt="카드 이미지" />
+        <div class="card__info">
+          <p class="card__label">Card Label</p>
+          <p class="card__title">Card Title</p>
+          <div class="card__cost">
+            <span class="card__cost--hilight">Hilight</span>
+            <span class="card__cost--cross">Cross Out</span>
+          </div>
+        </div>
+        <!-- 카드 하단 영역 -->
+        <div class="card__review">
+          <!-- 카드 하단 별점 처리 UI -->
+          <div class="card__stars" data-value="3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- card vertical-하단 영역 없음 ver -->
+      <div class="card vertical">
+        <img class="card__img" src="./images/sample.jpg" alt="카드 이미지" />
+        <div class="card__info">
+          <p class="card__label">Card Label</p>
+          <p class="card__title">Card Title</p>
+          <div class="card__cost">
+            <span class="card__cost--hilight">Hilight</span>
+            <span class="card__cost--cross">Cross Out</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-horizontal-ui">
+      <!-- card horizontal ver -->
+      <div class="card horizontal">
+        <div class="card__img-cover">
+          <img class="card__img" src="./images/sample.jpg" alt="카드 이미지" />
+        </div>
+        <div class="card__info">
+          <p class="card__title">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="card__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <!-- 카드 하단 별점 처리 UI -->
+          <div class="card__stars" data-value="3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p class="card__auth">John Doe</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
