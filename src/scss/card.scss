@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "reset.scss";
+
+/* ui css 시작 */
+.card {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 3px;
+  background: rgb(248, 248, 248);
+  &.vertical {
+    width: 40%;
+    .card {
+      &__img {
+        width: 100%;
+        height: auto;
+      }
+      &__title {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &.horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    .card {
+      &__img {
+        width: 100%;
+        height: 100%;
+        &-cover {
+          width: 40%;
+          height: auto;
+          min-width: 200px;
+        }
+      }
+      &__info {
+        width: 60%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      &__title {
+        font-weight: bold;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        line-height: 2;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  &__info {
+    margin: 10px;
+  }
+  &__label {
+    font-size: 0.9rem;
+    color: #a8a8a8;
+    margin-bottom: 10px;
+  }
+  &__cost {
+    margin-bottom: 10px;
+    &--hilight {
+      font-size: 0.9rem;
+      color: rgb(255, 101, 101);
+    }
+    &--cross {
+      font-size: 0.7rem;
+      color: #a8a8a8;
+      -webkit-text-decoration-line: line-through;
+      text-decoration-line: line-through;
+    }
+  }
+  &__contents {
+    border-top: 1px solid rgb(204, 204, 204);
+    padding: 15px 10px;
+  }
+  &__stars {
+    span::before {
+      display: inline-block;
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #a8a8a8;
+    }
+    @for $i from 1 through 5 {
+      &[data-value="#{$i}"] > span:nth-child(-n + #{$i})::before {
+        background-color: rgb(247, 231, 7);
+      }
+    }
+  }
+  &__comment {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: #a8a8a8;
+    font-size: 0.8rem;
+    line-height: 2;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+  }
+  &__content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1.2;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+  }
+  &__auth {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #a8a8a8;
+    line-height: 19px;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    margin: 0 7px;
+  }
+}
