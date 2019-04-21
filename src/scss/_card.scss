@@ -1,7 +1,14 @@
-@charset "utf-8";
-@import "reset.scss";
+$font-grey: #a8a8a8;
 
-/* ui css 시작 */
+@mixin ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1.2;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
 .card {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 3px;
@@ -47,14 +54,9 @@
         justify-content: space-between;
       }
       &__title {
+        @include ellipsis;
         font-weight: bold;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
-        line-height: 2;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
       }
     }
   }
@@ -63,7 +65,7 @@
   }
   &__label {
     font-size: 0.9rem;
-    color: #a8a8a8;
+    color: $font-grey;
     margin-bottom: 10px;
   }
   &__cost {
@@ -74,12 +76,12 @@
     }
     &--cross {
       font-size: 0.7rem;
-      color: #a8a8a8;
+      color: $font-grey;
       -webkit-text-decoration-line: line-through;
       text-decoration-line: line-through;
     }
   }
-  &__contents {
+  &__review {
     border-top: 1px solid rgb(204, 204, 204);
     padding: 15px 10px;
   }
@@ -90,7 +92,7 @@
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      background-color: #a8a8a8;
+      background-color: $font-grey;
     }
     @for $i from 1 through 5 {
       &[data-value="#{$i}"] > span:nth-child(-n + #{$i})::before {
@@ -99,31 +101,21 @@
     }
   }
   &__comment {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include ellipsis;
     -webkit-line-clamp: 1;
-    color: #a8a8a8;
+    color: $font-grey;
     font-size: 0.8rem;
-    line-height: 2;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
     margin-top: 5px;
   }
   &__content {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include ellipsis;
     -webkit-line-clamp: 3;
-    line-height: 1.2;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
     font-size: 0.9rem;
   }
   &__auth {
     display: inline-block;
     font-size: 0.8rem;
-    color: #a8a8a8;
+    color: $font-grey;
     line-height: 19px;
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
