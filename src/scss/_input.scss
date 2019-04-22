@@ -7,11 +7,21 @@
     &:focus {
       outline: none !important;
       border-color: #71cebf;
+      -webkit-box-shadow: 0 0 1px #71cebf;
       box-shadow: 0 0 1px #71cebf;
     }
     &[disabled] {
       background: #eee;
       color: rgb(245, 132, 132);
+      &::-webkit-input-placeholder {
+        color: rgb(245, 132, 132);
+      }
+      &:-ms-input-placeholder {
+        color: rgb(245, 132, 132);
+      }
+      &::-ms-input-placeholder {
+        color: rgb(245, 132, 132);
+      }
       &::placeholder {
         color: rgb(245, 132, 132);
       }
@@ -19,6 +29,15 @@
     &.read-only {
       background: rgb(241, 241, 241);
       color: black;
+      &::-webkit-input-placeholder {
+        color: black;
+      }
+      &:-ms-input-placeholder {
+        color: black;
+      }
+      &::-ms-input-placeholder {
+        color: black;
+      }
       &::placeholder {
         color: black;
       }
