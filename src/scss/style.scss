@@ -1,11 +1,9 @@
 @charset "utf-8";
 @import "_reset.scss";
 @import "_card.scss";
-
-.card-vertical-ui {
-  display: flex;
-}
+@import "_input.scss";
+@import "_common.scss";
 
 .card-horizontal-ui {
-  width: 50%;
+  width: 70%;
 }

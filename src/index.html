@@ -7,6 +7,43 @@
     <link href="scss/style.scss" rel="stylesheet" />
   </head>
   <body>
+    <!-- 입력 폼 ui -->
+    <section class="input-ui">
+      <form class="input__form">
+        <label for="input__area" class="readable-hidden">입력 영역</label>
+        <textarea
+          name="input_area"
+          id="input__area"
+          placeholder="주문 요청사항을 입력해주세요"
+        >
+초기값이 있을 수 있습니다.</textarea
+        >
+        <span id="input__count"></span>
+        <button class="input__save">save</button>
+      </form>
+      <form class="input__form">
+        <label for="input__area" class="readable-hidden">입력 영역</label>
+        <textarea
+          name="input_area"
+          id="input__area"
+          placeholder="주문 요청사항을 입력해주세요"
+          disabled
+        ></textarea>
+        <span id="input__count">500</span>
+      </form>
+      <form class="input__form">
+        <label for="input__area" class="readable-hidden">입력 영역</label>
+        <textarea
+          name="input_area"
+          id="input__area"
+          class="read-only"
+          placeholder="주문 요청사항을 입력해주세요"
+          disabled
+        >
+읽기 전용입니다</textarea
+        >
+      </form>
+    </section>
     <section class="card-vertical-ui">
       <!-- card vertical ver -->
       <div class="card vertical">
@@ -110,5 +147,6 @@
         </div>
       </div>
     </section>
+    <script src="./input.js"></script>
   </body>
 </html>
