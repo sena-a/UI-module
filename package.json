@@ -19,9 +19,7 @@
   },
   "homepage": "https://github.com/sena-a/UI-module#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
-  },
-  "dependencies": {
+    "parcel-bundler": "^1.12.3",
     "node-sass": "^4.11.0"
   }
 }
