@@ -6,7 +6,6 @@
 - scss
 - vanilla javascript
 - parcel
-- [placeholder polyfill](http://jamesallardice.github.io/Placeholders.js/)
 - [classList polyfill](https://github.com/eligrey/classList.js)
 
 ## 사용 시
@@ -23,7 +22,6 @@
 폴리필 추가
 
 ```html
-<script src="http://jamesallardice.github.io/Placeholders.js/assets/js/placeholders.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"></script>
 ```
 
